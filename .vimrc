@@ -15,6 +15,7 @@ Plugin 'posva/vim-vue'
 Plugin 'scrooloose/nerdtree'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Chiel92/vim-autoformat'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -150,7 +151,7 @@ map ,} ysiw}
 map <C-j> :bn <CR>
 map <C-k> :bp <CR>
 
-autocmd FileType html,css,vue,jsx,js,htmldjango,scss,sass EmmetInstall
+autocmd FileType html,css,vue,jsx,js,javascript,htmldjango,scss,sass EmmetInstall
 au BufRead,BufNewFile *.vue set ft=html
 
 let g:user_emmet_install_global = 0
@@ -189,3 +190,15 @@ autocmd FileType scss noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 let g:netrw_cygwin = 0
 let g:netrw_ssh_cmd = '"C:\Program Files\Git\usr\bin\scp.exe" -batch -T -ssh'
+
+" functions
+"
+"
+
+function RunPython()
+    execute '!python '. expand('%:p')
+endfunction
+
+noremap <f4> :call RunPython() <CR>
+
+
