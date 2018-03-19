@@ -1,0 +1,85 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[volume]
+color=#b5bd68
+label=♪
+instance=Master
+interval=once
+signal=10
+
+
+[disk]
+label= SSD:
+color=#b5bd68
+instance=/home/d3nis
+interval=30
+separator=false
+
+[disk]
+label= 1TB:
+color=#b5bd68
+instance=/home/d3nis/1TB
+interval=30
+
+[disk]
+label= 500G:
+color=#b5bd68
+instance=/home/d3nis/500GB
+interval=30
+
+[layout]
+label=LANG:
+command= /home/d3nis/scripts/i3blocks_scripts/show_layout.sh
+signal=10
+interval=1
+
+
+[memory]
+label=MEM
+separator=true
+color=#cc6666
+interval=30
+
+[cpu_usage]
+label=
+color=#cc6666
+interval=5
+
+
+[date]
+command= date '+%d.%m.%Y'
+color=#5f819d
+interval=1
+
+[time]
+command= date '+%H:%M:%S'
+color=#81a2be
+interval=1
