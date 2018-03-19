@@ -1,6 +1,6 @@
 xrdb ~/.Xresources
 xset b off
 xbindkeys &
-#exec xfce4-session
 nitrogen --restore
+xcompmgr -f -I0.028 -O0.03 -D5 &
 exec i3

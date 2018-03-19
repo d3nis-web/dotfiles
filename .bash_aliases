@@ -9,19 +9,6 @@ alias exres='vim ~/.Xresources'
 alias ecron='crontab -e'
 alias sb='source ~/.bashrc'
 
-# find in history
-function his {
-    history | grep $1
-}
-# find files
-function ff {
-    find $1 -type f -iname *$2*
-}
-
-#find directories
-function fd {
-    find $1 -type d -iname *$2*
-}
 
 alias paci='sudo pacman -S --color=auto'
 alias pacs='pacman -Ss --color=auto'
@@ -39,5 +26,22 @@ alias gch='git checkout'
 
 # OTHER
 alias ytv='youtube-viewer'
-alias sc='$WEBBROWSER soundcloud.com'
-alias goog='$WEBBROWSER google.com'
+alias sc='$WEBBROWSER soundcloud.com &'
+alias goog='$WEBBROWSER google.com &'
+
+
+#FUNCS
+
+# find in history
+function his {
+    history | grep $1
+}
+# find files
+function ff {
+    find $1 -type f -iname *$2*
+}
+
+#find directories
+function fd {
+    find $1 -type d -iname *$2*
+}

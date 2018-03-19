@@ -15,7 +15,9 @@ Plugin 'posva/vim-vue'
 Plugin 'scrooloose/nerdtree'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'chrisbra/Colorizer'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -31,7 +33,6 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tmhedberg/matchit'
 Plugin 'gregsexton/MatchTag'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mxw/vim-jsx'
 "Plugin 'leafgarland/typescript-vim'
 "Plugin 'easymotion/vim-easymotion'
 "Plugin 'junegunn/fzf'
@@ -52,7 +53,7 @@ set fileencodings=utf-8,cp1251,cp866,koi8-r
 set background=dark
 set wildignore=**node_modules**
 set wildignore+=*.pyc             " ignores *.pyc
-colorscheme onedark
+colorscheme hybrid
 
 if has("gui_running")
   if has("gui_gtk2")
