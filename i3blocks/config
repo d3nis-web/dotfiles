@@ -28,6 +28,10 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+
+
+
+
 [volume]
 color=#b5bd68
 label=♪
@@ -57,6 +61,7 @@ interval=30
 
 [layout]
 label=LANG:
+color=#b5bd68
 command= /home/d3nis/scripts/i3blocks_scripts/show_layout.sh
 signal=10
 interval=1
@@ -65,21 +70,22 @@ interval=1
 [memory]
 label=MEM
 separator=true
-color=#cc6666
+color=#b5bd68
 interval=30
 
 [cpu_usage]
 label=
-color=#cc6666
+color=#b5bd68
 interval=5
 
 
 [date]
 command= date '+%d.%m.%Y'
-color=#5f819d
+color=#b5bd68
 interval=1
 
 [time]
 command= date '+%H:%M:%S'
-color=#81a2be
+color=#b5bd68
 interval=1
+

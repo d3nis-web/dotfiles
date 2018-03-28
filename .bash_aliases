@@ -5,6 +5,7 @@ alias ls='ls --color=auto'
 alias ll='ls -ltha --color=auto'
 alias eb='vim ~/.bashrc'
 alias ea='vim ~/.bash_aliases'
+#alias cat='cat -n'
 alias exres='vim ~/.Xresources'
 alias ecron='crontab -e'
 alias sb='source ~/.bashrc'
@@ -29,6 +30,9 @@ alias ytv='youtube-viewer'
 alias sc='$WEBBROWSER soundcloud.com &'
 alias goog='$WEBBROWSER google.com &'
 
+
+# DEV
+alias runs='python manage.py runserver'
 
 #FUNCS
 

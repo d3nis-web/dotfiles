@@ -7,10 +7,10 @@
 "xterm"
     Alt+Return
 
-"xdotool getwindowfocus windowkill"
-    Alt+q
-
 "rofi -show combi"
     Alt+Tab
 "rofi -show combi"
     Alt+d
+
+"imgur-screenshot"
+    m:0x0 + c:107

@@ -27,7 +27,7 @@ configuration {
     lightred:    #cc6666;
     //
     // Green
-    green:       #8c9440;
+    green:       #b5bd68;
     lightgreen:  #b5bd68;
     //
     // Yellow
@@ -55,7 +55,7 @@ configuration {
     highlight:     bold #ffffff;
 
     transparent: rgba(0,0,0,0.1);
-    font: "xos4 Terminus 12";
+    font: "Segoe UI 12";
 }
 #window {
     location: center;
@@ -109,6 +109,7 @@ configuration {
 }
 #element selected.normal {
     background-color: @green;
+    color: rgba(0,0,0,0.7);
 }
 #element normal active {
     foreground: @green;

@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: xos4 Terminus 14px
+font pango: Segoe UI 13px
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -34,7 +34,7 @@ floating_modifier $mod
 bindsym $mod+Return exec xterm
 
 # kill focused window
-#bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec rofi -show combi
@@ -92,18 +92,21 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-set $linux 1 LINUX
-set $web 2 WEB
-set $nemo 3 NEMO
-set $other 4 OTHER
+set $linux 1  LINUX
+set $web 2  WEB
+set $nemo 3  NEMO
+set $other 4  OTHER
+set $mess 5  MESSENGERS
+set $system 6 SYSTEM
+set $media 7  MEDIA
 # switch to workspace
 bindsym $mod+1 workspace $linux
 bindsym $mod+2 workspace $web
 bindsym $mod+3 workspace $nemo
 bindsym $mod+4 workspace $other
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
+bindsym $mod+5 workspace $mess
+bindsym $mod+6 workspace $system
+bindsym $mod+7 workspace $media
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
@@ -184,10 +187,10 @@ bar {
             separator #373b41
 
                                 #border #bg     #text
-            focused_workspace  #8c9440 #8c9440 #1d1f21
+            focused_workspace  #b5bd68 #b5bd68 #1d1f21
             active_workspace   #333333 #5f676a #c5c8c6
-            inactive_workspace #1d1f21 #1d1f21 #8c9440
-            urgent_workspace   #2f343a #900000 #8c9440
+            inactive_workspace #1d1f21 #1d1f21 #b5bd68
+            urgent_workspace   #2f343a #900000 #b5bd68
         }
         #status_command python /home/d3nis/.config/i3/statusbar.py
         status_command i3blocks
@@ -198,7 +201,7 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #c5c8c6 #c5c8c6 #c5c8c6 #b5bd68   #8c9440
+client.focused          #c5c8c6 #c5c8c6 #c5c8c6 #b5bd68   #b5bd68
 client.focused_inactive #333333 #5f676a #c5c8c6 #484e50   #5f676a
 client.unfocused        #1d1f21 #1d1f21 #888888 #1d1f21   #1d1f21
 client.urgent           #2f343a #900000 #c5c8c6 #900000   #900000
